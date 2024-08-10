@@ -4,18 +4,45 @@
     <title>Calculator</title>
     <style>
     .parent{
-        background-color: #e6fff9;
-        height: 400px;
-        width: 700px;
+        background-color: #00664b;
+        height: 600px;
+        width: 400px;
         padding: 20px;
         border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     input{
-        height: 50px;
-        width: 690px;
+        height: 55px;
+        width: 390px;
         border-radius: 5px;
         margin-bottom: 20px;
+        box-shadow: 0 0 0 2px rgb(187, 186, 186);
+    }
+
+    .child{
+        height: 540px;
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    button{
+        height: 65px;
+        width: 65px;
+        border-radius: 25px;
+        margin: 10px;
+        box-shadow: 2px 2px 0 2px black;
+        font-size: 18px;
+        color: black;
+    }
+
+    .addition{
+        height: 150px;
+        border-radius: 50px;
     }
 
     </style>
@@ -24,7 +51,7 @@
     <h1>Calculator</h1>
     <div class="parent">
         <input type="number">
-        <div>
+        <div class="child">
             <button>AC</button>
             <button>sin</button>
             <button>7</button>
@@ -47,7 +74,7 @@
             <button>/</button>
             <button>*</button>
             <button>-</button>
-            <button>+</button>
+            <button class="addition">+</button>
         </div>
     </div>
 </body>
